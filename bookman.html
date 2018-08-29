@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
             web3.eth.getStorageAt(contract_address, 8, function(error, result){
             if(!error) {
                 console.log(web3.toAscii(result))
-                document.getElementById("etherlog").innerHTML+= "Price Sell: " 2 + web3.toDecimal(result)+ "<br>" ;
+                document.getElementById("etherlog").innerHTML+= "Price Sell: " 1 + web3.toDecimal(result)+ "<br>" ;
             } else
                 console.error(error);
             });
