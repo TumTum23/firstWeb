@@ -51,14 +51,14 @@ window.addEventListener('load', function() {
             web3.eth.getStorageAt(contract_address, 7, function(error, result){
             if(!error) {
                 console.log(web3.toAscii(result))
-                document.getElementById("etherlog").innerHTML+= "Price Buy: " + web3.toDecimal(result)+ "<br>" ;
+                document.getElementById("etherlog").innerHTML+= "Price Buy: " 1 + web3.toDecimal(result)+ "<br>" ;
             } else
                 console.error(error);
             });
             web3.eth.getStorageAt(contract_address, 8, function(error, result){
             if(!error) {
                 console.log(web3.toAscii(result))
-                document.getElementById("etherlog").innerHTML+= "Price Sell: " + web3.toDecimal(result)+ "<br>" ;
+                document.getElementById("etherlog").innerHTML+= "Price Sell: " 2 + web3.toDecimal(result)+ "<br>" ;
             } else
                 console.error(error);
             });
